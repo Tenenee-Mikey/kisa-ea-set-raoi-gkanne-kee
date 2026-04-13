@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | KISA USP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <a href="index.html" class="logo">
+      <img src="yes.jpg" alt="KISA Logo" class="logo-img">
+    </a>
+
+    <nav class="nav">
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="order1.html">Order</a></li>
+    <li><a href="contact.html">Committee</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+<main>
+
+<section class="about-hero">
+  <div class="container">
+    <h1>KISA - Kiribati Students Association</h1>
+    <p><strong> at the University of the South Pacific</strong></p>
+  </div>
+</section>
+
+<section class="container about-grid">
+  <div class="about-card">
+    <h3>Teraa KISA?</h3>
+    <p>
+      KISA Bon te rabwata are ea ikotia te nati n I-Kiribati n koaua aika reirei i USP Fiji n boutokaira, karikarekeira ao buokira i marenara.
+    </p>
+  </div>
+
+  <div class="about-card">
+    <h3>Committees</h3>
+    <p>
+     Iai ana taibora KISA  are ena tauraoi n buokii ngkami te nati n Kiribati aika kam reirei i USP. Nakai naba ake ana tauraoi n kabira KISA ao n tei ibukin KISA man ana waaki n tibanako USP. Aia details KISA committees ena kona nb n reke ikai.
+    </p>
+  </div>
+</section>
+
+<section class="about-section-light">
+  <div class="container">
+    <h2>What We Do</h2>
+
+    <div class="about-actions">
+      <div class="action-card">
+        <h4>Cultural Events</h4>
+        <p>Ti baronga aron te kakatauraoi nakon ana Function USP are te <strong>Open-day</strong>, are bon kaotan kateira ao kinakira imataia te koraki</p>
+      </div>
+
+      <div class="action-card">
+        <h4>Independence Celebration</h4>
+        <p>Ti baronga nb aron te katauraoi imwain ara inaomata are in 12 n July, ao a bane n kaungaki n kabane bwa tina buoka aron te babaronga kai bon ara bong ae kakawaki</p>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Kiribati Students Association (KISA) - USP Fiji</p>
+</footer>
+<script>
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+
+</body>
+</html>

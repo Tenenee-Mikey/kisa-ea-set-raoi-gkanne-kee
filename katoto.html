@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | KISA USP</title>
+  <link rel="stylesheet" href="katoto.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <a href="index.html" class="logo">
+      <img src="yes.jpg" alt="KISA Logo" class="logo-img">
+    </a>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero-video-container">
+
+  <!-- Image always loads first -->
+  <img src="poster.jpg" alt="Hero Background" class="hero-poster">
+
+  <!-- Video only for desktop -->
+  <video
+    class="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata">
+    <source src="kisa.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay">
+    <div class="container">
+      <h1>Mauri!</h1>
+      <p><strong>Kaaraki nakon ara page ae tuakarako aei. Kona order am kaboraoi?</strong></p>
+      <a href="order.html" class="btn">ORDER IKAI</a>
+    </div>
+  </div>
+
+</section>
+
+<section class="welcome-text">
+  <h2>Welcome to Our Community</h2>
+  <p>
+    KISA tiaki te tii te Association; bon te utu nb ibukia I-Kiribati students aika reirei i USP.
+    We grow together, learn together, and succeed together.
+  </p>
+</section>
+
+<section class="bottom-info">
+  <div class="container info-grid">
+
+    <div class="info-column">
+      <h3>Katanoata Tabeua</h3>
+      <ul class="info-list">
+        <li>Te page bon tii ibukin te order nte kaboraoi.</li>
+        <li>
+          E reke nb ikai aia Contact kain ami taibora n KISA
+          (<a href="contact.html"><strong>Contact US</strong></a>)
+        </li>
+        <li>Ti boutokai ami iango n katamaroa ibukin ara page aeio 😊</li>
+      </ul>
+    </div>
+
+    <div class="vertical-line"></div>
+
+    <div class="info-column">
+      <h3>Kaetieti</h3>
+      <ul class="info-list">
+        <li>
+          Te video aio e kabane n te PC n aron te speed.
+          N roon te phone e bon tia image ibukin te kaburoroa.
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Kiribati Students Association (KISA) - USP Fiji</p>
+</footer>
+
+<script>
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>

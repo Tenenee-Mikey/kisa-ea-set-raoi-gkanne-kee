@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | KISA USP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <a href="index.html" class="logo">
+      <img src="yes.jpg" alt="KISA Logo" class="logo-img">
+    </a>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="order1.html">Order</a></li>
+        <li><a href="contact.html">Committee</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO VIDEO SECTION -->
+<section class="hero-video-container">
+
+  <video
+    class="bg-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    poster="poster.jpg">
+    
+    <source src="kisa.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="hero-overlay">
+    <div class="container">
+      <h1>Mauri!</h1>
+      <p><strong>Kaaraki nakon ana page KISA ae tuakarako aei. Tai taua baim ma mamataku ao karekea matatam ao kanakoa am iango</strong></p>
+      
+    </div>
+  </div>
+
+</section>
+
+<section class="welcome-text">
+  <h2>Welcome to Our Community</h2>
+  <p>
+    KISA tiaki te tii te Association; bon te utu nb ibukia I-Kiribati students aika reirei i USP.
+    We grow together, learn together, and succeed together.
+    We also celebrate culture, support each other, and create memories that last a lifetime.
+  </p>
+</section>
+
+<section class="bottom-info">
+  <div class="container info-grid">
+
+    <div class="info-column">
+      <h3>Katanoata Tabeua</h3>
+      <ul class="info-list">
+        <li>Te page aio ena kona n ibuobuoki ibukin te order nte kaboraoi.</li>
+        <li>
+          E reke nb ikai aia Contact kain ami taibora n KISA
+          (<a href="contact.html"><strong>Committee</strong></a>)
+        </li>
+        <li>Ti boutokai ami iango n katamaroa ibukin ara page aeio 😊</li>
+      </ul>
+    </div>
+
+    <div class="vertical-line"></div>
+
+    <div class="info-column">
+      <h3>Kaetieti</h3>
+      <ul class="info-list">
+        <li>
+          Ngkana iai nanobuakam nte site aio n aron te katoto, te video are kam nooria
+          ieta ti bon karuoa man te internet n akea ana kariaia te owner iai. Iai inaomatam n reitaki nte reitaki raoi bwa ena karuoaki.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="motto-section">
+  <h2>Te Mauri, Te Raoi, Te Tabemoa</h2>
+  <p>Health • Peace • Prosperity</p>
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Kiribati Students Association (KISA) - USP Fiji</p>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Video fade-in when ready
+  const video = document.querySelector(".bg-video");
+  video.addEventListener("canplay", () => {
+    video.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>

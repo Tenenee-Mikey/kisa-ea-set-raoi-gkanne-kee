@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniform Order | KISA USP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <a href="index.html" class="logo">
+      <img src="yes.jpg" alt="KISA Logo" class="logo-img">
+    </a>
+
+    <nav class="nav">
+  <button class="nav-toggle" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="order.html">Order</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+<main class="container">
+
+<section style="text-align:center; padding:40px 0;">
+<h1>KISA Uniform Order Form</h1>
+<p><em>Taiaoka kamatatako imwain am order. Ko rabwa.</em></p>
+</section>
+
+<div class="form-warning">
+<h3>⚠️ Important Notice</h3>
+<ul>
+<li>- 2 te form ae tauraoi, 1 ibukim gkee are kona order bon tii ibukim, ao are 1 ibukim gkana kona order ibukiia am koraki, friends kee gkana e diffrent sizes.</li>
+<li>- Am Phone number e kakawaki ibukira  nte confirm n am order</li>
+<li>- Double-check am <strong>Ara</strong> ma am <strong>Phone #</strong>.</li>
+<li>- Once ko submit am order, ao tia konaa nb n nooria man ara database.</li>
+<li>- Tina manga katanoata te final list n arami ma ami order, ao e kakawaki kam na reitaki gkana iai te nakobuaka.</li>
+</ul>
+</div>
+
+<!-- ORDER FORMS -->
+<section class="order-container">
+
+    <!-- FORM 1 -->
+    <div class="order-box">
+        <h2>Order for only 1 person</h2>
+
+        <form action="https://formspree.io/f/xkovnjbb" method="POST" class="order-form">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="Name" placeholder="Aram ikai! " required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone #</label>
+                <input type="text" name="Phone_Number" placeholder="Voda ke Digi bon nakoim" required>
+            </div>
+
+            <div class="form-group">
+                <label>Shirt Size</label>
+                <select name="Size" required>
+                    <option value="" disabled selected>Select size</option>
+                    <option>XS</option><option>S</option><option>M</option>
+                    <option>L</option><option>XL</option><option>2XL</option>
+                    <option>3XL</option><option>4XL</option><option>5XL</option>
+                    <option>6XL</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number" name="Quantity" min="1" max="10" required>
+            </div>
+
+            
+
+            <button type="submit" class="btn btn-submit">
+                Submit am Order
+            </button>
+
+        </form>
+    </div>
+
+    <!-- FORM 2 -->
+    <div class="order-box">
+        <h2>Order for more than 1 person</h2>
+
+        <form action="https://formspree.io/f/xwvnklbn" method="POST" class="order-form">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="Name" placeholder="Korea aram ikai"required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone #</label>
+                <input type="text" name="Phone_Number" placeholder="Digi ke Voda eaki akaka."required>
+            </div>
+
+           
+            <div class="form-group">
+                <label>Details</label>
+                <textarea name="Details" placeholder="e.g: 1 te L, 2 te XL ao 2 ibukin te 10 years old baby.. etc" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+                Submit am order 
+            </button>
+
+        </form>
+    </div>
+	
+
+</section>
+	<div class = "conclusion">
+		<p style = "color: red;">Karaon raoi am order bon bebeten ara mwakuri ao bon aki mangaon am order.</p>
+	</div>
+
+</main>
+
+<footer>
+<p>&copy; 2025 Kiribati Students Association (KISA) - USP Fiji</p>
+</footer>
+<script>
+  const toggle = document.querySelector(".nav-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
+
+</body>
+</html>
