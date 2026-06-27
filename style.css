@@ -214,7 +214,7 @@ header {
 ========================= */
 .about-hero {
   background: var(--primary);
-  background-image: linear-gradient( rgba(0, 0, 139, 12), /* dark blue with 60% opacity */ 
+  background-image: linear-gradient( rgba(0, 0, 139, 0.6), /* dark blue with 60% opacity */ 
 					rgba(0, 0, 139, 0.2)),
   url("usp.jpg");
   background-repeat: no-repeat;   /* prevents tiling */
